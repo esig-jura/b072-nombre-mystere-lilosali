@@ -13,6 +13,8 @@
  * @param {number} max
  * @returns {number}
  */
+
+
 function tireNombre(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
