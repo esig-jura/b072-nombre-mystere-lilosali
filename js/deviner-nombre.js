@@ -1,19 +1,11 @@
 /**
  * Jeu du nombre mystère
- * @author  Steve Fallet
+ * @author  lilos Ali
  * @version 2.0
- * @since   2018-09-09 (date de création)
+ * @since   07.02.2024
  */
 
 'use strict';
-
-//initialistion des variables
-let nbMystere = 0;
-let nbEssais= 0;
-let reponse= 0;
-let message= 'Entrez un nombre entre 1 et 100 :';
-
-
 /**
  * Retourne un nombre entier aléatoire compris entre min et max
  * @param {number} min
@@ -23,6 +15,12 @@ let message= 'Entrez un nombre entre 1 et 100 :';
 function tireNombre(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
+
+//initialistion des variables
+let nbMystere = 0;
+let nbEssais= 0;
+let reponse= 0;
+let message= 'Entrez un nombre entre 1 et 100 :';
 
 // Appel de la fonction pour générer le nombre mystère
 nbMystere = tireNombre(1,100);
